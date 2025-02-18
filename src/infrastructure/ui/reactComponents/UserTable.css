@@ -1,0 +1,112 @@
+﻿.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.user-table th, .user-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.user-table th {
+    background-color: #f4f4f4;
+}
+.user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.delete-btn {
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border: none;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.delete-btn-confirm{
+    background-color: oklch(0.577 0.245 27.325);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+.pagination-btn {
+    padding: 8px 10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: white ;
+}
+.page-info {
+    font-weight: bold;
+}
+
+
+/* Estilos generales para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* Encabezado de la tabla */
+th {
+    background-color: #007bff;
+    color: black;
+    padding: 8px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Celdas de la tabla */
+td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Estilo Zebra: Filas con fondo alternado */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+/* Fila seleccionada (cuando se pasa el ratón sobre la fila) */
+tr:hover {
+    background-color: #e9ecef;
+}
+
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+}
+
+.user-row {
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .user-row:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .user-row:hover .user-image {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .user-image {
+    transition: transform 0.3s ease-in-out;
+  }
